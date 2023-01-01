@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"bno055_lcd_f103c8t6\startup_stm32f103xb.o"
+"bno055_lcd_f103c8t6\main.o"
+"bno055_lcd_f103c8t6\stm32f1xx_it.o"
+"bno055_lcd_f103c8t6\stm32f1xx_hal_msp.o"
+"bno055_lcd_f103c8t6\bno055.o"
+"bno055_lcd_f103c8t6\lcd16x2_i2c.o"
+"bno055_lcd_f103c8t6\stm32f1xx_hal_gpio_ex.o"
+"bno055_lcd_f103c8t6\stm32f1xx_hal_i2c.o"
+"bno055_lcd_f103c8t6\stm32f1xx_hal.o"
+"bno055_lcd_f103c8t6\stm32f1xx_hal_rcc.o"
+"bno055_lcd_f103c8t6\stm32f1xx_hal_rcc_ex.o"
+"bno055_lcd_f103c8t6\stm32f1xx_hal_gpio.o"
+"bno055_lcd_f103c8t6\stm32f1xx_hal_dma.o"
+"bno055_lcd_f103c8t6\stm32f1xx_hal_cortex.o"
+"bno055_lcd_f103c8t6\stm32f1xx_hal_pwr.o"
+"bno055_lcd_f103c8t6\stm32f1xx_hal_flash.o"
+"bno055_lcd_f103c8t6\stm32f1xx_hal_flash_ex.o"
+"bno055_lcd_f103c8t6\stm32f1xx_hal_exti.o"
+"bno055_lcd_f103c8t6\stm32f1xx_hal_tim.o"
+"bno055_lcd_f103c8t6\stm32f1xx_hal_tim_ex.o"
+"bno055_lcd_f103c8t6\system_stm32f1xx.o"
+--strict --scatter "BNO055_LCD_F103C8T6\BNO055_LCD_F103C8T6.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BNO055_LCD_F103C8T6.map" -o BNO055_LCD_F103C8T6\BNO055_LCD_F103C8T6.axf
