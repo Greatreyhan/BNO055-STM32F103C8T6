@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xB</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;..\..\BNO055_LCD_F103C8T6</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../../BNO055_LCD_F103C8T6</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -394,6 +394,16 @@
           <GroupName>Application/User/Core</GroupName>
           <Files>
             <File>
+              <FileName>BNO055.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BNO055.c</FilePath>
+            </File>
+            <File>
+              <FileName>BNO055.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\BNO055.h</FilePath>
+            </File>
+            <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/main.c</FilePath>
@@ -407,26 +417,6 @@
               <FileName>stm32f1xx_hal_msp.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/stm32f1xx_hal_msp.c</FilePath>
-            </File>
-            <File>
-              <FileName>BNO055.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\BNO055.c</FilePath>
-            </File>
-            <File>
-              <FileName>lcd16x2_i2c.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\lcd16x2_i2c.c</FilePath>
-            </File>
-            <File>
-              <FileName>BNO055.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\BNO055.h</FilePath>
-            </File>
-            <File>
-              <FileName>lcd16x2_i2c.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\lcd16x2_i2c.h</FilePath>
             </File>
           </Files>
         </Group>

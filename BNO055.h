@@ -10,8 +10,6 @@
 #include <stdint.h>
 #include <stdio.h>
 
-extern I2C_HandleTypeDef hi2c1;
-
 //*****************************************************************************//
 
 #define START_BYTE 0xAA
@@ -276,45 +274,38 @@ enum bno055_axis_map_sign_t {
 
 void bno055_writeData(uint8_t reg, uint8_t data);
 void bno055_readData(uint8_t reg, uint8_t *data, uint8_t len);
-void bno055_delay(int time);
 
-void bno055_reset();
-bno055_opmode_t bno055_getOperationMode();
+void bno055_reset(void);
+bno055_opmode_t bno055_getOperationMode(void);
 void bno055_setOperationMode(bno055_opmode_t mode);
-void bno055_setOperationModeConfig();
-void bno055_setOperationModeNDOF();
-void bno055_enableExternalCrystal();
-void bno055_disableExternalCrystal();
-void bno055_setup();
+void bno055_setOperationModeConfig(void);
+void bno055_setOperationModeNDOF(void);
+void bno055_enableExternalCrystal(void);
+void bno055_disableExternalCrystal(void);
+void bno055_setup(I2C_HandleTypeDef* i2cHandler) ;
 
-int8_t bno055_getTemp();
+int8_t bno055_getTemp(void);
 
-uint8_t bno055_getBootloaderRevision();
-uint8_t bno055_getSystemStatus();
-uint8_t bno055_getSystemError();
-int16_t bno055_getSWRevision();
+uint8_t bno055_getBootloaderRevision(void);
+uint8_t bno055_getSystemStatus(void);
+uint8_t bno055_getSystemError(void);
+int16_t bno055_getSWRevision(void);
 
-bno055_self_test_result_t bno055_getSelfTestResult();
-bno055_calibration_state_t bno055_getCalibrationState();
-bno055_calibration_data_t bno055_getCalibrationData();
+bno055_self_test_result_t bno055_getSelfTestResult(void);
+bno055_calibration_state_t bno055_getCalibrationState(void);
+bno055_calibration_data_t bno055_getCalibrationData(void);
 void bno055_setCalibrationData(bno055_calibration_data_t calData);
-bno055_vector_t bno055_getVectorAccelerometer();
-bno055_vector_t bno055_getVectorMagnetometer();
-bno055_vector_t bno055_getVectorGyroscope();
-bno055_vector_t bno055_getVectorEuler();
-bno055_vector_t bno055_getVectorLinearAccel();
-bno055_vector_t bno055_getVectorGravity();
-bno055_vector_t bno055_getVectorQuaternion();
+bno055_vector_t bno055_getVectorAccelerometer(void);
+bno055_vector_t bno055_getVectorMagnetometer(void);
+bno055_vector_t bno055_getVectorGyroscope(void);
+bno055_vector_t bno055_getVectorEuler(void);
+bno055_vector_t bno055_getVectorLinearAccel(void);
+bno055_vector_t bno055_getVectorGravity(void);
+bno055_vector_t bno055_getVectorQuaternion(void);
 void bno055_setAxisMap(bno055_axis_map_t axis);
-
-
-//*****************************************************************************//
-
-
 
 void bno055_writeData(uint8_t reg, uint8_t data);
 void bno055_readData(uint8_t reg, uint8_t *data, uint8_t len);
-void bno055_delay(int time);
 
 
 #ifdef __cplusplus

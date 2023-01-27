@@ -26,7 +26,6 @@ bno055_lcd_f103c8t6\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_fl
 bno055_lcd_f103c8t6\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 bno055_lcd_f103c8t6\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h
 bno055_lcd_f103c8t6\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
-bno055_lcd_f103c8t6\main.o: ..\..\BNO055_LCD_F103C8T6\BNO055.h
+bno055_lcd_f103c8t6\main.o: ../../BNO055_LCD_F103C8T6/BNO055.h
 bno055_lcd_f103c8t6\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 bno055_lcd_f103c8t6\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-bno055_lcd_f103c8t6\main.o: ..\..\BNO055_LCD_F103C8T6\lcd16x2_i2c.h

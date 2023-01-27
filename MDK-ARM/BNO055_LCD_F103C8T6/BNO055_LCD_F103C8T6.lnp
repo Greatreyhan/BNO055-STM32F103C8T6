@@ -1,10 +1,9 @@
 --cpu Cortex-M3
 "bno055_lcd_f103c8t6\startup_stm32f103xb.o"
+"bno055_lcd_f103c8t6\bno055.o"
 "bno055_lcd_f103c8t6\main.o"
 "bno055_lcd_f103c8t6\stm32f1xx_it.o"
 "bno055_lcd_f103c8t6\stm32f1xx_hal_msp.o"
-"bno055_lcd_f103c8t6\bno055.o"
-"bno055_lcd_f103c8t6\lcd16x2_i2c.o"
 "bno055_lcd_f103c8t6\stm32f1xx_hal_gpio_ex.o"
 "bno055_lcd_f103c8t6\stm32f1xx_hal_i2c.o"
 "bno055_lcd_f103c8t6\stm32f1xx_hal.o"
